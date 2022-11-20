@@ -1,0 +1,24 @@
+Fetch e javascript assíncrono
+
+    Códigos assíncronos permitem que se possa fazer requisições externas com algum recurso do navegador
+    Promises - recurso mais utilizado para isso. Fetch utiliza Promises para fazer essas requisições
+
+    Um código é dito assíncrono quando este roda fora do fluxo principal de aplicação, ou seja,
+    fora da sequencia original do programa.
+
+    SÍNCRONO X ASSÍNCRONO
+
+    Síncrono - acontece em ordem de etapas tempo. Ex: conversa. Cada um fala de uma vez.
+    Assíncrono - Não é necessário que uma etapa termine para começar a segunda. Ex: comunicação email
+
+    Código assíncrono: Funciona como um timer em programação de microcontroladores.
+
+
+    Código Síncrono: Declara Variável - Executa Função - Operação Matemática - Outra função - Fim
+    Código Assíncrono: Declara Variável - Executa Função - Chama Assíncrono - Outra etapa - Retorna Assíncrono
+
+    ASSÍNCRONO = TIMER
+
+    setTimeout(() => {}, TempoDelayms) - Função Assíncrona.
+
+
