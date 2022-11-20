@@ -17,8 +17,20 @@ Fetch e javascript assíncrono
     Código Síncrono: Declara Variável - Executa Função - Operação Matemática - Outra função - Fim
     Código Assíncrono: Declara Variável - Executa Função - Chama Assíncrono - Outra etapa - Retorna Assíncrono
 
-    ASSÍNCRONO = TIMER
+    ASSÍNCRONO = TIMERs em microcontroladores
 
-    setTimeout(() => {}, TempoDelayms) - Função Assíncrona.
+        setTimeout(() => {}, TempoDelayms) - Função Assíncrona.
 
+    Promises - ferramentas que o JS possui para lidar com código assíncrono. 
+        Representa a conclusão ou falha de uma execução assíncrona, além do seu valor resultante.
 
+        Pode ter três valores: 
+                pending - aguardando a execução da função
+                fulfilled - realizada totalmente com sucesso. Promise resolvida
+                rejected - quando a operação assíncrona possui algum erro.
+   
+    Para criarmos nossa própria promise: 
+        Utiliza-se new Promise(), ex:
+          new Promise((resolve, reject) => {});
+    
+    Para retornar o valor de uma promise quando esta é resolvida: VER CÓDIGO: Example/promiseSolved.js
