@@ -42,3 +42,14 @@ Fetch e javascript assíncrono
 
     Já, quando uma função é rejeitada, encadeia-se após o .then o '.catch'. Este, será executado para 
     caso haja reject.
+
+
+
+    FETCH():
+
+        Utilizado para gerar interações entre aplicações.
+        Ex: Interagir back-end com front-end.
+        fetch (URL, {})
+
+        O fetch é uma requisição assíncrona, que precisa de timeout para enviar ou receber parametro.
+        
