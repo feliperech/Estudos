@@ -15,5 +15,8 @@ Sessão 01.01 - Configurando o ambiente de trabalho e primeiros passos
     O Front-end tem cada vez mais ficado complexo e escalável, o que necessita de um gerenciamento
     de pacotes bem feito.
     
+    PASTA scr/ -> Pasta que contém o código-fonte
+    PASTA dist/ || build -> Pasta que contém o deploy
 
+    
     
