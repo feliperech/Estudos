@@ -34,3 +34,11 @@ Fetch e javascript assíncrono
           new Promise((resolve, reject) => {});
     
     Para retornar o valor de uma promise quando esta é resolvida: VER CÓDIGO: Example/promiseSolved.js
+    
+    Para lidar com o valor de retorno do Promise, utiliza-se o 'then' para sucesso e o catch para falha:
+        Observe o código promiseSolved. Nele, o console.log exibe pending. Isso porque, até a execução,
+    não obteve retorno da função, visto que demora 1s para isso acontecer. Para que se tenha esse retorno,
+    utiliza-se o .then, como mostrado no codigo Promises.js
+
+    Já, quando uma função é rejeitada, encadeia-se após o .then o '.catch'. Este, será executado para 
+    caso haja reject.
