@@ -19,4 +19,14 @@ Pontos importantes:
         
 Objetivo da aula, construir um projetinho com textos e card.
 
+Fluxo de funcionamento:
+    Na pasta public/index.html, na div id='root', é colocado todos os elementos utilizados no React
+    Esses elementos são colocados na div pelo index.js, utilizando o render();
+    O index puxa tudo que está no App.js na div de id root
+    Logo, o index.js funciona como um arquivo intermediário, linkando o app.js ao index.html
 
+App.js:
+    Nesse arquivo, fica todos os arquivos funcionais.
+
+O React não deixa existir uma estrutura que não tenha uma estrutura pai.
+Nesses casos, precisa-se utilizar uma tag main ou section
