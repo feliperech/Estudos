@@ -18,6 +18,7 @@ input{
     height: 40px;
     text-align: center;
     font-size: xx-large;
+    border-radius: 5px;
     background-color: whitesmoke;
     color: rgb(28, 92, 12);
     display: inline-block;
@@ -54,6 +55,7 @@ button{
     width: 200px;
     font-size: larger;
     height: 50px;
+    border-radius: 15px;
     display: inline-block;
     background-color: greenyellow;
     cursor:pointer;
