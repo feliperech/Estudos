@@ -9,4 +9,29 @@ REACT ---> HTML + JS = JSX
 
 O React permite que se utilize ferramentas para colocar lógicas elaboradas com poucos códigos.
 
+    Divide a aplicação em vários elementos de bloco, reutilizáveis ou não
+    Esses blocos realizam a gestão das suas próprias infos 
+    Cada bloco pode ser modificado sem que haja a modificação dos outros demais. 
+    Torna a refatoração dos códigos MUITO mais simples.
+    https://pt-br.reactjs.org/ -----> documentação
+
+
+
 2.1.1 - INSTALAÇÃO DO REACT
+
+    NPM - Gerenciador de pacotes para instalação e inicio de um projeto React
+    NPX - Utilizado para executar um comando do pacote sem a necessidade de instalá-lo.
+
+    Para criar o React: Utiliza-se o comando npx create-react-app nome-da-aplicacao.
+        Pacote que cria todas os arquivos necessários para uma aplicação. Não precisa ser instalado.
+        Ao final da execução, o NPX cria um novo diretório com o nome nome-da-aplicacao.
+    
+    Para acessar o diretório: npm start
+        Ao utilizar esse comando, uma aba no navegador é aberta com o programa executado.
+
+2.1.2 - JSX
+
+    Junção de JS com HTML
+    Significa: Javascript Syntax Extension
+
+    Exemplo: const element = <h1>Hello, world!</h1>;
