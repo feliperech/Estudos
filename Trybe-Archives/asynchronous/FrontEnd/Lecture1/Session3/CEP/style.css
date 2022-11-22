@@ -1,0 +1,60 @@
+body{
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-top: 150px;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+h2{
+    height: fit-content;
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: xx-large;
+    background-color: whitesmoke;
+    color: rgb(28, 92, 12);
+    display: inline-block;
+    margin-right: 5%;
+}
+
+main{
+    margin: auto;
+    width: auto;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(183, 196, 178, 0.219);
+}
+
+#linha-principal{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#linha-resposta{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button{
+    width: 200px;
+    font-size: larger;
+    height: 50px;
+    display: inline-block;
+    background-color: greenyellow;
+    cursor:pointer;
+}

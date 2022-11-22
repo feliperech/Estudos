@@ -1,0 +1,27 @@
+Async e Await
+
+Outro método para tratar códigos assíncronos e promises, utilizando try e catch para tratar erros.
+
+await fetch(URL) => Indica ao js para esperar o fetch ser resolvido para dar continuidade ao código.
+    const response = await fetch(URL)
+A função para isso necessita ser classificada como async, como no exemplo abaixo:
+
+getButton.addEventListener('click', async () => {
+
+    const response = await fetch(URL); //response espera obter a fetch para atribuir o valor
+    const data = await response.json(); //data espera a execução do .jason para obter o valor
+});
+
+Para tentar fazer a requisição, ao invés de utilizarmos o .then/.catch para tratar erro, utiliza-se o try
+
+try{
+    const response = await fetch(URL); //response espera obter a fetch para atribuir o valor
+    const data = await response.json(); //data espera a execução do .jason para obter o valor
+} catch (error){
+    console.log(error.message);
+}
+
+try/catch  assemelha-se a um if/else cujo parâmetro é ter realizado a requisição.
+
+if (requisição deu certo) = usa-se await e capta o response/data =====> try
+else = exibe o erro =====> catch
