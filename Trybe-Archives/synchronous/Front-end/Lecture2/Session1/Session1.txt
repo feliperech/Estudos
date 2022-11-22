@@ -1,0 +1,32 @@
+Aula síncrona - 22/11/2022
+
+Existem bibliotecas auxiliares ao React, como o bootstrap, por exemplo, além de outras como o materialUI.
+    Material UI - Trás componentes prontos (TOP!)
+    NÃO PRECISA USAR DOOOOM! Uhuuu
+    NÃO É RECOMENDADO USAR DOM NO REACT!
+
+    NÃO PRECISA DE CODERUNER E LIVESERVER
+
+Pontos importantes:
+
+    Para exportar todas as classes: export Class from './class'
+    Para exportar classes específicas: export {Export1, Export2} from './class'
+    A renderização acontece dentro da div no arquivo index.js
+
+    Por que utilizar npx ao invés de npm para criar a estrutura?
+        O npx cria somente o projeto, não consumindo armazenamento.
+        O npm irá instalar a biblioteca que cria o projeto, sem a necessidade.
+        
+Objetivo da aula, construir um projetinho com textos e card.
+
+Fluxo de funcionamento:
+    Na pasta public/index.html, na div id='root', é colocado todos os elementos utilizados no React
+    Esses elementos são colocados na div pelo index.js, utilizando o render();
+    O index puxa tudo que está no App.js na div de id root
+    Logo, o index.js funciona como um arquivo intermediário, linkando o app.js ao index.html
+
+App.js:
+    Nesse arquivo, fica todos os arquivos funcionais.
+
+O React não deixa existir uma estrutura que não tenha uma estrutura pai.
+Nesses casos, precisa-se utilizar uma tag main ou section
