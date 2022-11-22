@@ -1,0 +1,12 @@
+Aula 2.1 - Front-end -> Introdução ao React
+
+
+HTML - Estrutura
+CSS - Estilo
+JS - Interação e Lógica
+
+REACT ---> HTML + JS = JSX
+
+O React permite que se utilize ferramentas para colocar lógicas elaboradas com poucos códigos.
+
+2.1.1 - INSTALAÇÃO DO REACT
