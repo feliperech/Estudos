@@ -1,0 +1,11 @@
+Aula assíncrona de Front-end = Componentes - React
+
+
+
+Componentes formam a base do React
+  Uma página web pode ser segmentada em vários blocos que podem ser reutilizados.
+  Um componente é uma função ou uma classe JS.
+  Os parâmetros que são passados para os componentes são chamados de props.
+  Os props retornam elementos React que determinam o que será renderizado.
+
+  
