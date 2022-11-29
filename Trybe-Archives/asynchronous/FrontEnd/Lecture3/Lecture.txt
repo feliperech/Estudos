@@ -1,0 +1,14 @@
+Sessão 3, aula 01 - 29/11/2022
+
+O que é um estado?
+  * Representa o momento de um componente dinâmico.
+  * Ex: hora atual é o estado de um relógio.
+  * Estado é uma informação dinâmica, que muda conforme o tempo passa.
+  * Não é possível criar uma variável solta dentro da classe. Dessa forma, para armazenar alguma
+informação, mesmo que se mude a prop várias vezes, utiliza-se o estado do componente.
+  * Cada componente tem seu estado, local especial que se armazena as informações independente do que
+aconteça.
+  * Um componente nunca enxerga o estado do outro.
+  * Estados devem ser utilizados para armazenar infos que devem persistir enquanto a tela não for 
+  fechada ou atualizada, como se fosse um LocalStorage do React
+  
