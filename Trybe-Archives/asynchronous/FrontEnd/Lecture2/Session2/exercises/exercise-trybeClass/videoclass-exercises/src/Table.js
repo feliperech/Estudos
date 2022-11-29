@@ -6,12 +6,13 @@ import data from './Data';
 class Table extends Component {
   render() {
     return (
-      <div>
-       <UserName name = {data.joao.name}/>
-       <br/>
-       <UserInfo email= {data.joao.email} id = {data.joao.id} />
-      </div>
-    );
+      data.map( users => (
+        <div>
+        <UserName name = {users.name}/>
+        <br/>
+        <UserInfo email= {users.email} id = {users.id}  />
+       </div>
+      )));
   }
 }
 

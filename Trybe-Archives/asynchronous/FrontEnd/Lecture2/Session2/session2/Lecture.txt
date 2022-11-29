@@ -1,0 +1,5 @@
+Componentes React - Props e Componentes.
+  Aula assíncrona, 2.2 de Front-end.
+
+Componentes: Classes ou funções que permitem serem reutilizadas  e que, juntas, formam o React.
+Props: Parâmetros passados para os componentes.

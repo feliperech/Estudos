@@ -1,5 +1,5 @@
 import './App.css';
-import Table from './table'; /* Importa o elemento component */
+import Table from './Table'; /* Importa o elemento component */
 
 function App() {
   return (
