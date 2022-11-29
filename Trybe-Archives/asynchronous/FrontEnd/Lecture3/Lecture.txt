@@ -11,4 +11,12 @@ aconteça.
   * Um componente nunca enxerga o estado do outro.
   * Estados devem ser utilizados para armazenar infos que devem persistir enquanto a tela não for 
   fechada ou atualizada, como se fosse um LocalStorage do React
+
+O que é um evento em React?
+  Igual os eventos de JS, com a diferença na forma que o elemento é ligado ao evento.
+  Para usar o event, usa-se this e bind
+
+Utilizando o constructor:
+  Dentro de uma classe, deseja-se juntar todas as funções que estejam vinculadas para dentro da classe
+  Para isso, utiliza-se o constructor.
   
