@@ -19,4 +19,26 @@ O que é um evento em React?
 Utilizando o constructor:
   Dentro de uma classe, deseja-se juntar todas as funções que estejam vinculadas para dentro da classe
   Para isso, utiliza-se o constructor.
-  
+  this - objeto javascript que representa a classe, com todos os componentes e estados que ele tenha.
+         Por causa do this, utiliza-se as funções DENTRO da classe, nunca fora.
+         Para usar uma função que está dentro da classe, utiliza-se this.function;
+  constructor - Quando o react renderiza um elemento, ele executa vários passos/funções. Uma delas é
+  a função constructor, que pode ser redeclarada dentro do app.
+  constructor () {
+    super();
+    console.log)('componente sendo construído'); // EXEMPLO
+  }
+
+ O this tem um problema. Ele só funciona dentro do render. Isso é uma limitação técnica.
+      this.HandleClick = this.HandleClick.bind(this) // isso permite que seja enxergado o this no render.
+      utilizar o bind. Isso permite que o this seja enxergado
+
+
+JUNTANDO EVENTOS E Estados
+  Ideia - apresentar o número de clicks dentro do botão.
+  Precisa: obter o estado da aplicação.
+
+  no constructor, acessar o estado utilizando o this.state;
+  para mudar o valor do stado, utiliza-se this.setState({
+
+  });

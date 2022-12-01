@@ -1,0 +1,68 @@
+Aula de formulários, 30/11/2022
+
+A informação digitada pelo usuário nos formulários fica armazenada no DOM.
+  1 - Criar uma classe chamada Form
+  2 - Criar formulário com HTML
+  3 - Inserir constructor na classe criada.
+  4 - Inserir super () detro do constructor.
+  5 - Inserir this.state = { } contendo parametros do objeto com os valores que se deseja obter
+  6 - Utilizar a tag value para receber um valor do estado, dentro do textarea/inputs
+  7 - utilizar a tag onChange para verificar mudanças de estado.
+      7.1. event.target retorna o elemento que está recebendo o elemento
+        7.1.1. event.target.value retorna cada valor que foi inserido.
+  8 - Criar função handle para lidar com o change.
+    8.1 - nessa função, inserir a alteração pertinente. 
+      8.1.1 - Ex:
+        handleChange (event) {
+          this.setState({estadoFavorito: event.target.value})
+        } 
+      8.1.2 - O código acima muda o valor do estadoFavorito, previamente criado no this.state = {}
+  9 - atribuir a tag value o valor atualizado.
+    9.1 - value ={this.state.estadoFavorito}
+  10 - atribuir a função de alteração para o onChange.
+    10.1 - onChange {this.handleChange};
+
+OBS: Quando um componente do formulário passa a ter seu valor gerenciado por react, passa a ser 
+considerado um componente controlado.
+
+---------------------------------------------------------------------------------------------------
+É possível tornar todos os componentes do formulário controlados com um único handler.
+
+Para isso, utiliza-se:
+
+1 - Desconstrói target, passando-o como parâmetro da seguinte forma:
+    handleChange ({target}) {
+      const { name, value} = target.
+    }
+
+2 - Utilize this.setState passando name como value da seguinte forma;
+
+     handleChange ({target}) {
+      const { name, value} = target;
+      this.setState({
+        [name]: value
+      })
+    }
+
+    Dessa forma, utiliza-se o próprio nome do componente para alterar seu valor. 
+      Quando for email, capta o valor do email 
+      Quando for nome, capta o valor do nome 
+      ...
+
+
+OBS1: value RECEBE A VARIÁVEL QUE SERÁ ALTERADO O VALOR
+     onChange RECEBE A FUNÇÃO QUE ALTERARÁ ESSE DADO.
+
+OBS2: Associar value a um ternário para checar se é um checkbox ou não.
+  const value = target.type === 'checkbox' ? target.checked : target.value;
+
+
+------------------------------------------------------------------------------------------------
+
+PARTE 03 - VALIDAÇÃO DE ERROS DE FORMULÁRIO. 
+
+Quando se tem um handler gigante, deve-se alterar esses componentes em componentes menores.
+O estado tem que ficar no formulário, ou seja, só se usa um único constructor e este é no forms.
+Para resolver esse problema, utiliza-se a passagem de valor do pai para filho.
+  Para isso, utiliza-se callback, passando a função handleChange como prop.
+  
