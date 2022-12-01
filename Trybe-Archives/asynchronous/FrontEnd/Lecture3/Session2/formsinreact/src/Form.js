@@ -1,10 +1,11 @@
 import React from 'react'
+import EstadoFavorito from './EstadoFavorito';
 
 class Form extends React.Component {
 
   constructor () {
     super();
-    this.handleTextAreaChange = this.handleTextAreaChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.state = {
       estadoFavorito : '',
       nome: '',
@@ -14,7 +15,7 @@ class Form extends React.Component {
     }
   }
 
-  handleTextAreaChange ({target}) { // como se fosse addEventListener
+  handleChange ({target}) { // como se fosse addEventListener
     const {name} = target;
     const value = target.type === 'checkbox' ? target.checked : target.value
     this.setState({
@@ -28,21 +29,16 @@ class Form extends React.Component {
         <h1> Fazendo aquela convenção maravilhosa!</h1>
 
         <form className='form'>
-          <label>
-            Diga seu Estado favorito do Brasil!
-            <textarea
-             name='estadoFavorito' 
-             value={this.state.estadoFavorito}
-             onChange ={this.handleTextAreaChange} />
-          </label>
-          <br/>
+
+          <EstadoFavorito value={this.state.estadoFavorito}
+          handleChange = {this.handleChange} />
 
           <label>
             Email
             <input name='email'
             type="email"
             value={this.state.email}
-            onChange={this.handleTextAreaChange}
+            onChange={this.handleChange}
           />
           </label>
           <br/>
@@ -53,7 +49,7 @@ class Form extends React.Component {
             name='nome'
             type="text"
             value={this.state.nome}
-            onChange={this.handleTextAreaChange} />
+            onChange={this.handleChange} />
           </label>
           <br/>
 
@@ -63,7 +59,7 @@ class Form extends React.Component {
             name='idade'
             type='number'
             value={this.state.idade}
-            onChange={this.handleTextAreaChange}
+            onChange={this.handleChange}
             />
           </label>
           <br/>
@@ -73,7 +69,7 @@ class Form extends React.Component {
             name='vaiComparecer'
             type='checkbox'
             value={this.state.vaiComparecer}
-            onChange={this.handleTextAreaChange} />
+            onChange={this.handleChange} />
           </label>
           <br/>
 
