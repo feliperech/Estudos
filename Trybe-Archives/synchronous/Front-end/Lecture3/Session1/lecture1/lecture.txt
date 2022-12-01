@@ -1,0 +1,14 @@
+Aula síncrona, 3.1 - 29/11/2022
+
+Componente: elemento de uma página, similar a uma classe.
+
+Props: parametros de componentes. Read Only.
+
+State - momento atual da sua interface.
+        Alterado pelo recurso SetState que força um novo render();
+        Estado sempre É um OBJETO!
+        Atualização é assíncrona
+        NUNCA deve ser alterado diretamente.
+        https://pt-br.reactjs.org/docs/faq-state.html
+
+      
