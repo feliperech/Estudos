@@ -10,12 +10,14 @@ export default class Form extends Component {
       number,
       expiry,
       cvc,
+      isDisable,
       handleChange,
       handleFocus,
+      handleSubmit,
     } = this.props ;
     
     return (
-      <form>
+      <form onSubmit={handleSubmit} > {/* O onSubmit serve como enter e onClick */}
         <label htmlFor='name-input'>
           Escreva o nome <br />
           <input 
@@ -64,7 +66,10 @@ export default class Form extends Component {
           />       
         </label>
         <br />
-
+        <button
+          disabled={isDisable}
+          
+        > Cadastre </button>
       </form>
     )
   }
