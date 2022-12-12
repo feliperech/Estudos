@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(215, 235, 194);
+}
+.principal-css {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.cards-css {
+  margin: 6%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form {
+  text-align: center;
+  padding: 44px;
+  background-color:rgb(136, 206, 67);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid rgba(0, 128, 0, 0.301);
+  border-radius: 4%;
+}
+button {
+  margin-top: 5%;
+  font-size: xx-large;
+  color: rgb(0, 128, 0);
+  border: 5px solid rgba(0, 10, 5, 0.13);
+  border-radius: 5%;
+}
+
+.rccs {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20%;
+}
+
+.card-main {
+  margin-top: 10%;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(0, 128, 0, 0.301);
+  padding: 2%;
+  margin-bottom: 5%;
+  font-size: 30px;
+}

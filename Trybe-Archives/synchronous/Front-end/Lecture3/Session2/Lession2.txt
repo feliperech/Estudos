@@ -1,0 +1,49 @@
+Aula 3.2 - Forms no react
+
+Componentes: Card, Header, Formulário, lista de cartão renderizadas
+
+Usar excalidraw.com para organizar como se deseja o site
+
+
+Objetivos da lição: 
+
+  01 - Criar Formulário - OK
+  02 - Criar Estado do Formulário - OK
+  03 - Criar um handleChange
+  04 - Compartilhar infos com o Card
+  05 - Criar o botão no Forms
+  06 - Validação dos campos + botão
+
+
+1 - O name do input precisa ser igual à key do state
+2 - Usar para automatizar a mudança de estado...
+
+  handleChange ({ target }) = > {
+    const {name,value}
+    this.setState ({ 
+      [name] : value,
+    })
+  }
+3 - aplicar ao input a key: onChange = { this.handleChange} para alterar state
+
+4 - Para compartilhar o stado de irmão para irmão, utiliza-se props. Para isso, deve-se utilizar
+o estado no pai, passando do filho. 
+    4.1 - PAI: App.js
+            Filho 01 - Form
+            Filho 02 - Card
+    Se deseja passar states do form para o card. Para isso, utiliza-se o conceito de state lifting,
+  ou seja, elevação de estado de filho para pai, funcionando numa sequencia como:
+      
+        FILHO 01 ----> PAI -----> FILHO 02
+
+    4.2 - Para passar as infos de estado, utiliza-se props nos filhos e state no pai
+
+5 - Para validar um botão, cria-se uma variável e aplica-se na tag button,propriedade disabled.
+ 5.1 Se true, desabilita, se false, habilita.
+ 5.2 Cria-se uma callback dentro do setState para resolver assincronicidade
+ 5.3 Cria-se variáveis com condições booleanas
+ 5.4 Aplica-se regex para nome e etc. Pesquisar mais sobre.
+
+
+ 6 - Para renderizar uma lista salva, utiliza-se o state, pois é algo dinâmico.
+  
